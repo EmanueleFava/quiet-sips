@@ -3,5 +3,26 @@
     <img [src]="user?.imgUrl" alt="user-avatar" />
     <h3>{{ user?.username }}</h3>
     <h4>{{ user?.role }}</h4>
+    <button (click)="openAvatarModal()">Cambia Avatar</button>
+    <button (click)="openUsernameModal()">Cambia Username</button>
+  </div>
+</div>
+
+<!-- Modale Avatar -->
+<div class="modal" *ngIf="showAvatarModal">
+  <div class="modal-content">
+    <h3>Carica nuovo avatar</h3>
+    <input type="file" accept="image/*" (change)="onAvatarSelected($event)" />
+    <button (click)="closeAvatarModal()">Annulla</button>
+  </div>
+</div>
+
+<!-- Modale Username -->
+<div class="modal" *ngIf="showUsernameModal">
+  <div class="modal-content">
+    <h3>Nuovo username</h3>
+    <input #usernameInput type="text" [value]="user?.username" />
+    <button (click)="updateUserName(usernameInput.value)">Salva</button>
+    <button (click)="closeUsernameModal()">Annulla</button>
   </div>
 </div>

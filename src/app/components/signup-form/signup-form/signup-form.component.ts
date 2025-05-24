@@ -64,7 +64,6 @@ export class SignupFormComponent {
 
   onSubmit() {
     if (this.registrationForm.valid) {
-      //  aggiungere hash della password poi
       const formValues = this.registrationForm.value;
       const user: User = {
         id: crypto.randomUUID(),
