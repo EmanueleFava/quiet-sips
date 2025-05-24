@@ -1,0 +1,12 @@
+<app-author-dettails-section [author]="author" />
+<div class="container">
+  <img src="assets/queit-reading.png" alt="quiet-sips-illustration" />
+</div>
+<div class="book-section">
+  <h1>Books</h1>
+  <app-books-list [hasFilter]="true" [authorId]="author?.id" />
+</div>
+<div class="author-img-container">
+  <img src="assets/author.png" alt="author-illustration" class="author-img" />
+</div>
+<app-authors-list />

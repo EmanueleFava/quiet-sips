@@ -1,0 +1,11 @@
+<ul class="review-container">
+  <li *ngFor="let review of reviews">
+    <app-card-review [review]="review" [user]="user" />
+  </li>
+</ul>
+<div *ngIf="reviews.length == 0" class="error">
+  <div class="error-card">
+    <h2>❌</h2>
+    <p>Non hai recensioni!</p>
+  </div>
+</div>

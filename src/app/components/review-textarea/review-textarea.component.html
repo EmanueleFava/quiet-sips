@@ -1,0 +1,41 @@
+<ng-container *ngIf="isReviewNew">
+  <form
+    [formGroup]="reviewForm"
+    (ngSubmit)="onSubmit()"
+    class="review-container"
+  >
+    <div class="review-section">
+      <textarea
+        rows="1"
+        name="reviewText"
+        placeholder="Write your review"
+        required
+        formControlName="reviewText"
+      ></textarea>
+      <div *ngIf="reviewText?.invalid && reviewText?.touched" class="errore">
+        Inserire il testo della review
+      </div>
+      <div class="rating-container">
+        <label for="rating">Valutazione:</label>
+        <input
+          type="number"
+          id="rating"
+          name="rating"
+          min="1"
+          max="10"
+          step="0.5"
+          placeholder="Es: 7.5"
+          formControlName="rating"
+        />
+      </div>
+      <div *ngIf="rating?.invalid && rating?.touched" class="errore">
+        Inserire un numero valido da 0 a 10
+      </div>
+      <button class="btn-send" type="submit" [disabled]="reviewForm.invalid">
+        Send
+      </button>
+      <p *ngIf="error" class="errore">Registrazione recensione fallita</p>
+      <p *ngIf="!isReviewNew" class="errore">Hai già recensito questo libro</p>
+    </div>
+  </form>
+</ng-container>

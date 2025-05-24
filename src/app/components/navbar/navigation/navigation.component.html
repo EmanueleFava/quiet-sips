@@ -1,0 +1,26 @@
+<nav>
+  <a routerLink="dashboard" class="logo-link">
+    <img src="assets/book.png" alt="logo" class="logo" />
+  </a>
+
+  <button
+    class="hamburger"
+    (click)="toggleMenu()"
+    aria-label="Menu"
+    [style.display]="showHamburger ? 'block' : 'none'"
+  >
+    &#9776;
+  </button>
+
+  <div class="nav-links" [ngClass]="{ open: menuOpen }">
+    <a routerLink="dashboard">Dashboard</a>
+    <a routerLink="books">Books</a>
+    <a routerLink="authors">Authors</a>
+    <a routerLink="login" *ngIf="!isLoggedIn">Login</a>
+    <a routerLink="signup" *ngIf="!isLoggedIn">Sign-up</a>
+    <ng-container *ngIf="isLoggedIn">
+      <a routerLink="profile">Profile</a>
+      <button class="logOut-btn" (click)="logout()">Logout</button>
+    </ng-container>
+  </div>
+</nav>

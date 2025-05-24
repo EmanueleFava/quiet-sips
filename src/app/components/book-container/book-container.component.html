@@ -1,0 +1,25 @@
+<div class="container">
+  <ng-container *ngIf="isDashBoard; else notDashboardImg">
+    <img src="assets/quiet-sips.png" alt="quiet-sips-illustration" />
+  </ng-container>
+  <ng-template #notDashboardImg>
+    <img
+      class="books-reader"
+      src="assets/queit-reading3.png"
+      alt="quiet-sips-illustration"
+    />
+  </ng-template>
+</div>
+
+<div
+  class="book-section"
+  [ngClass]="{ dashboard: isDashBoard, 'not-dashboard': !isDashBoard }"
+>
+  <h1>Books</h1>
+  <ng-container *ngIf="isDashBoard; else notDashboardBooks">
+    <app-books-list [isDashBoard]="true"></app-books-list>
+  </ng-container>
+  <ng-template #notDashboardBooks>
+    <app-books-list [isDashBoard]="false"></app-books-list>
+  </ng-template>
+</div>

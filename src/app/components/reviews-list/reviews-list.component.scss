@@ -1,0 +1,42 @@
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reviews-container > li {
+  list-style: none;
+  flex: 0 0 calc(33.333% - 13.33px); /* per 3 elementi con space-between */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.error-card {
+  width: 400px;
+  height: 80px;
+  background-color: #f5f4fa;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.error-card h2 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.error-card p {
+  text-align: center;
+}

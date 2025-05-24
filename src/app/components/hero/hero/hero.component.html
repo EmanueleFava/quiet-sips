@@ -1,0 +1,60 @@
+<ng-container *ngIf="isLogged">
+  <div class="container">
+    <div class="hero-content">
+      <img src="assets/book.png" alt="logo" />
+      <h1>Quiet Sips</h1>
+      <h2>
+        La tua libreria <br />
+        <strong>personale</strong>
+      </h2>
+      <p>
+        Bentornato nella tua libreria digitale <strong>{{ username }}</strong
+        >.
+      </p>
+      <p>
+        Qui puoi continuare ad aggiungere nuovi titoli, lasciare recensioni
+        sincere e assegnare il tuo voto a ogni lettura. Scopri cosa stanno
+        leggendo gli altri utenti, aggiorna la tua lista e lasciati ispirare da
+        consigli e opinioni della community. <br />Hai già letto qualcosa di
+        interessante? Condividilo! <br />
+        Ogni tua opinione può guidare un altro lettore verso la prossima grande
+        storia.
+      </p>
+      <p class="sub-p">
+        <strong> La tua biblioteca cresce con te, un libro alla volta.</strong>
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="assets/bookshero.png" alt="books-hero" />
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!isLogged">
+  <div class="container">
+    <div class="hero-content">
+      <img src="assets/book.png" alt="logo" />
+      <h1>Quiet Sips</h1>
+      <h2>
+        La tua libreria <br />
+        <strong>personale</strong>
+      </h2>
+      <p>
+        Costruisci la tua biblioteca personale, una lettura alla volta. <br />
+        Benvenuto nello spazio dove i tuoi libri non si dimenticano mai. <br />
+        Aggiungi i titoli che ami o che sogni di leggere, scrivi recensioni
+        sincere <br />
+        e assegna il tuo voto. Scopri cosa leggono gli altri, trova nuove
+        ispirazioni e <br />
+        partecipa a una community di veri appassionati di lettura. <br />
+      </p>
+      <p class="sub-p">
+        Perché ogni libro che leggi merita di essere ricordato. <br />
+        Inizia subito a creare la tua libreria digitale.
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="assets/bookshero.png" alt="books-hero" />
+    </div>
+  </div>
+</ng-container>

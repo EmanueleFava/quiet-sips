@@ -1,0 +1,10 @@
+<div class="card-container" [routerLink]="['/dettails-author', author?.id]">
+  <img [src]="author?.imgUrl" alt="book-img" />
+  <p><strong>Nome:</strong> {{ author?.name }}</p>
+  <p><strong>Anno di nascita:</strong> {{ author?.birthYear }}</p>
+
+  <div class="plot-overlay">
+    <h5 class="plot-text">{{ author?.name }}</h5>
+    <p class="plot-text">{{ author?.biography }}</p>
+  </div>
+</div>

@@ -1,0 +1,249 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "username",
+      "password": "password",
+      "role": "admin",
+      "imgUrl": "https://cdn-icons-png.flaticon.com/512/6596/6596121.png",
+      "bookIds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "reviewIds": [
+        "083ab14d-5ef3-44f6-ba64-bdacfb6912ff"
+      ]
+    },
+    {
+      "id": "8029009a-a116-412e-8946-01cbf07a09b6",
+      "username": "emanuele",
+      "email": "emanuele@gmail.com",
+      "password": "pigreco",
+      "role": "user",
+      "imgUrl": "https://cdn-icons-png.flaticon.com/512/6596/6596121.png",
+      "bookIds": [],
+      "reviewIds": []
+    },
+    {
+      "id": "79386a35-3ec8-41a8-b37a-52c53206ce10",
+      "username": "miriana",
+      "email": "miri@gmail.com",
+      "password": "pigreco",
+      "role": "user",
+      "imgUrl": "https://cdn-icons-png.flaticon.com/512/6596/6596121.png",
+      "bookIds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "reviewIds": []
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "The Lord of the Rings",
+      "authorId": "1",
+      "releaseYear": 1954,
+      "imgUrl": "https://m.media-amazon.com/images/I/913sMwNHsBL._AC_UF1000,1000_QL80_.jpg",
+      "plot": "Un epico viaggio attraverso la Terra di Mezzo, dove il giovane hobbit Frodo Baggins eredita l’Unico Anello, un oggetto di potere assoluto creato dal Signore Oscuro Sauron.\nCon l’aiuto della Compagnia dell’Anello, composta da uomini, elfi, nani e altri hobbit, Frodo affronta pericoli, battaglie, tentazioni e tradimenti in un mondo ricco di magia e mitologia.\nL’obiettivo è distruggere l’Anello nel Monte Fato, l’unico luogo dove può essere annientato.\nNel frattempo, le forze del male si risvegliano e l’intero destino della Terra di Mezzo è in bilico.",
+      "reviewIds": [
+        "1"
+      ],
+      "averageRating": 8.9
+    },
+    {
+      "id": "2",
+      "title": "1984",
+      "authorId": "2",
+      "releaseYear": 1949,
+      "imgUrl": "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+      "plot": "In una distopia futuristica, il mondo è governato da Oceania, uno stato totalitario dominato dal Partito e dalla figura onnipresente del Grande Fratello. Winston Smith, impiegato al Ministero della Verità, riscrive la storia sotto ordine del regime, ma inizia a ribellarsi nel suo cuore e nella mente. Incontra Julia, con la quale intreccia una relazione segreta e sovversiva. Ma in un mondo dove anche i pensieri sono controllati, la libertà è un crimine e l’amore un’eresia. La lotta di Winston contro l'oppressione mette in discussione la verità, la realtà e l'identità umana.",
+      "reviewIds": [],
+      "averageRating": 9.2
+    },
+    {
+      "id": "3",
+      "title": "To Kill a Mockingbird",
+      "authorId": "3",
+      "releaseYear": 1960,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1200px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+      "plot": "Ambientato nell’Alabama degli anni ‘30, il romanzo segue le vicende della giovane Scout Finch, che cresce osservando il mondo con occhi innocenti. Suo padre, Atticus Finch, è un avvocato che difende un uomo afroamericano ingiustamente accusato di stupro. Attraverso eventi profondi e toccanti, Scout e suo fratello Jem imparano cosa significano giustizia, coraggio e integrità in una società intrisa di razzismo e pregiudizio. La narrazione si intreccia con un racconto di formazione che mette in luce l’umanità nei momenti di maggiore ingiustizia.",
+      "reviewIds": [],
+      "averageRating": 9
+    },
+    {
+      "id": "4",
+      "title": "Pride and Prejudice",
+      "authorId": "4",
+      "releaseYear": 1813,
+      "imgUrl": "https://m.media-amazon.com/images/I/71UypkUjStL.jpg",
+      "plot": "Nell’Inghilterra georgiana, la brillante e indipendente Elizabeth Bennet è alle prese con le rigide convenzioni sociali e i complicati giochi del corteggiamento. Quando conosce l’orgoglioso e riservato Mr. Darcy, tra i due nascono scontri, incomprensioni e attrazione reciproca. Attraverso relazioni familiari, matrimoni strategici e giudizi affrettati, Elizabeth imparerà a guardare oltre le apparenze e i pregiudizi. Il romanzo esplora i limiti imposti alle donne, il valore della sincerità e la forza dell’amore autentico.",
+      "reviewIds": [],
+      "averageRating": 8.7
+    },
+    {
+      "id": "5",
+      "title": "The Great Gatsby",
+      "authorId": "5",
+      "releaseYear": 1925,
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKi5lknrw7SIwZ01RQRqyvtXz2bFxrUsGVpA&s",
+      "plot": "Durante l’età del jazz negli anni ‘20, Nick Carraway si trasferisce a Long Island e diventa vicino di casa del misterioso Jay Gatsby. Gatsby organizza feste lussuose nel suo palazzo nella speranza di riconquistare Daisy Buchanan, il suo grande amore perduto. Dietro la facciata di lusso e glamour si cela una tragica storia di ossessione, illusione e disillusione. Il romanzo riflette sul sogno americano, il materialismo e l'incapacità di sfuggire al passato.",
+      "reviewIds": [],
+      "averageRating": 8.5
+    },
+    {
+      "id": "6",
+      "title": "Moby Dick",
+      "authorId": "6",
+      "releaseYear": 1851,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Moby_Dick_for_Wikicommons.jpg",
+      "plot": "Il giovane Ismaele si imbarca sulla baleniera Pequod, comandata dal carismatico ma ossessionato capitano Ahab. Ahab ha un solo scopo: trovare e uccidere Moby Dick, la balena bianca che anni prima lo aveva mutilato. Il viaggio si trasforma in una disperata e simbolica caccia, in cui l’ossessione di Ahab mette in pericolo tutto l’equipaggio. Il romanzo esplora la lotta dell’uomo contro la natura, il destino e la propria follia, in un racconto ricco di allegorie filosofiche e religiose.",
+      "reviewIds": [],
+      "averageRating": 8.3
+    },
+    {
+      "id": "7",
+      "title": "Brave New World",
+      "authorId": "7",
+      "releaseYear": 1932,
+      "imgUrl": "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg",
+      "plot": "In un mondo futuristico dove la tecnologia e il controllo sociale garantiscono una felicità artificiale, l’individualità è sacrificata per l’ordine. Gli esseri umani vengono “fabbricati” in laboratorio e condizionati fin dalla nascita per accettare il proprio ruolo nella società. Bernard Marx, un uomo che si sente fuori posto, incontra John, il Selvaggio, cresciuto fuori dal sistema. L’incontro tra i due mondi mette in crisi le fondamenta della civiltà “perfetta”, sollevando questioni sull’autenticità della felicità, sulla libertà e sull’identità.",
+      "reviewIds": [],
+      "averageRating": 8.6
+    },
+    {
+      "id": "8",
+      "title": "Crime and Punishment",
+      "authorId": "8",
+      "releaseYear": 1866,
+      "imgUrl": "https://m.media-amazon.com/images/I/612KmKeEYEL._AC_UF1000,1000_QL80_.jpg",
+      "plot": "Raskolnikov, un giovane studente povero di San Pietroburgo, commette un duplice omicidio convinto di essere moralmente giustificato a eliminare una “parassita” sociale. Ma l’atto lo getta in un abisso di angoscia, paranoia e tormento spirituale. Mentre la polizia lo insegue, Raskolnikov è combattuto tra il desiderio di redenzione e l’orgoglio intellettuale. Incontra Sonia, una giovane donna costretta a prostituirsi, la cui fede e compassione lo porteranno a confrontarsi con la propria coscienza. Un viaggio psicologico nel cuore della colpa e nella possibilità di espiazione.",
+      "reviewIds": [],
+      "averageRating": 9.1
+    },
+    {
+      "id": "9",
+      "title": "The Catcher in the Rye",
+      "authorId": "9",
+      "releaseYear": 1951,
+      "imgUrl": "https://m.media-amazon.com/images/I/8125BDk3l9L.jpg",
+      "plot": "Holden Caulfield, adolescente ribelle e disilluso, viene espulso da una scuola prestigiosa e vaga per New York nel tentativo di trovare un senso alla propria esistenza. Rifiuta il mondo adulto, che considera falso e ipocrita, e si aggrappa ai ricordi della sorella Phoebe e alla purezza dell’infanzia. Attraverso incontri stranianti, riflessioni intime e momenti di disperazione, Holden cerca una via d’uscita dal vuoto emotivo che lo tormenta. Il romanzo dà voce al disagio adolescenziale e alla ricerca di autenticità in un mondo alienante.",
+      "reviewIds": [],
+      "averageRating": 8.4
+    },
+    {
+      "id": "10",
+      "title": "The Hobbit",
+      "authorId": "1",
+      "releaseYear": 1937,
+      "imgUrl": "https://m.media-amazon.com/images/I/81hylMcxa3L.jpg",
+      "plot": "Bilbo Baggins, un tranquillo hobbit della Contea, viene coinvolto controvoglia in una pericolosa avventura da Gandalf il Grigio e da una compagnia di tredici nani. Il loro obiettivo è recuperare il tesoro custodito dal temibile drago Smaug nella Montagna Solitaria. Durante il viaggio, Bilbo scopre il proprio coraggio, affronta troll, elfi, ragni giganti e trova un anello misterioso che cambierà il destino del mondo. Una storia di crescita personale, coraggio, amicizia e scoperta, ambientata in un mondo fantasy ricco di meraviglie.",
+      "reviewIds": [],
+      "averageRating": 9
+    }
+  ],
+  "reviews": [
+    {
+      "id": "083ab14d-5ef3-44f6-ba64-bdacfb6912ff",
+      "userId": "1",
+      "bookId": "1",
+      "rating": 10,
+      "description": "we"
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "J.R.R. Tolkien",
+      "birthYear": 1892,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg/250px-J._R._R._Tolkien%2C_ca._1925.jpg",
+      "biography": "John Ronald Reuel Tolkien è stato uno scrittore, filologo, glottoteta e linguista britannico...",
+      "bookIds": [
+        "1",
+        "10"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "George Orwell",
+      "birthYear": 1903,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/George_Orwell%2C_c._1940_%2841928180381%29_%28cropped%29.jpg/1200px-George_Orwell%2C_c._1940_%2841928180381%29_%28cropped%29.jpg",
+      "biography": "George Orwell è stato uno scrittore e giornalista britannico noto per le sue opere distopiche.",
+      "bookIds": [
+        "2"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Harper Lee",
+      "birthYear": 1926,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Photo_portrait_of_Harper_Lee_%28To_Kill_a_Mockingbird_dust_jacket%2C_1960%29.jpg/250px-Photo_portrait_of_Harper_Lee_%28To_Kill_a_Mockingbird_dust_jacket%2C_1960%29.jpg",
+      "biography": "Harper Lee è stata una scrittrice americana, famosa per 'Il buio oltre la siepe'.",
+      "bookIds": [
+        "3"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Jane Austen",
+      "birthYear": 1775,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg",
+      "biography": "Jane Austen è stata una scrittrice britannica nota per i suoi romanzi di critica sociale.",
+      "bookIds": [
+        "4"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "F. Scott Fitzgerald",
+      "birthYear": 1896,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/F_Scott_Fitzgerald_1921.jpg",
+      "biography": "Francis Scott Fitzgerald è stato uno scrittore statunitense associato all'età del jazz.",
+      "bookIds": [
+        "5"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Herman Melville",
+      "birthYear": 1819,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Herman_Melville_by_Joseph_O_Eaton.jpg",
+      "biography": "Herman Melville è stato uno scrittore e poeta americano, autore di 'Moby Dick'.",
+      "bookIds": [
+        "6"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Aldous Huxley",
+      "birthYear": 1894,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Aldous_Huxley_1947.png",
+      "biography": "Aldous Huxley è stato un filosofo e scrittore inglese noto per 'Il mondo nuovo'.",
+      "bookIds": [
+        "7"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Fyodor Dostoevsky",
+      "birthYear": 1821,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/1200px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+      "biography": "Fëdor Dostoevskij è stato uno scrittore e filosofo russo, autore di 'Delitto e castigo'.",
+      "bookIds": [
+        "8"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "J.D. Salinger",
+      "birthYear": 1919,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/J._D._Salinger_%28Catcher_in_the_Rye_portrait%29.jpg",
+      "biography": "Jerome David Salinger è stato uno scrittore statunitense noto per 'Il giovane Holden'.",
+      "bookIds": [
+        "9"
+      ]
+    }
+  ]
+}

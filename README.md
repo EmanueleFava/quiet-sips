@@ -1,59 +1,58 @@
-# QuietSips
+# Quiet Sips
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+**Quiet Sips** è un'applicazione web per la gestione della tua lista di libri da leggere e recensire. Puoi: aggiungere libri alla tua lista personale, rimuoverli, visualizzare i dettagli di ciascun libro, visualizzare l'autore e la sua lista di libri, scrivere recensioni, leggere le recensioni degli altri utenti e tenere traccia dei tuoi progressi di lettura.
 
-## Development server
+> ⚠️ _Solo gli utenti loggati possono aggiungere libri alla propria lista e scrivere recensioni._
 
-To start a local development server, run:
+## Funzionalità principali
 
-```bash
-ng serve
-```
+- **Aggiungi libri**: Inserisci nuovi libri nella tua lista personale _(disponibile solo per utenti loggati)_.
+- **Gestione disponibilità**: Checka quali libri sono già letti o disponibili nel sito.
+- **Recensioni**: Scrivi le tue recensioni e visualizza quelle degli altri utenti per ogni libro, con rating calcolato in base alle valutazioni di tutti gli utenti _(scrittura disponibile solo per utenti loggati)_.
+- **Lista personalizzata**: Organizza e visualizza facilmente i tuoi libri e le tue recensioni.
+- **Interfaccia responsive**: Utilizzando i media queries per poter visualizzare i contenuti anche da mobile.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologie utilizzate
 
-## Code scaffolding
+- **Angular** per lo sviluppo del frontend
+- **RxJS** per la gestione della programmazione reattiva e degli stream di dati
+- **HttpClientModule** di Angular per le chiamate REST
+- **json-server** per simulare un backend e gestire i dati tramite file JSON
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Come avviare l'applicazione
 
-```bash
-ng generate component component-name
-```
+Assicurati di avere [Node.js](https://nodejs.org/) installato.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. **Clona il repository**
 
-```bash
-ng generate --help
-```
+   ```bash
+   git clone <repo-url>
+   cd quiet-sips
+   ```
 
-## Building
+2. **Installa le dipendenze**
 
-To build the project run:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng build
-```
+3. **Avvia il server di sviluppo**
+   In una finestra del terminale, esegui:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
 
-## Running unit tests
+   In un'altra finestra del terminale, esegui:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng test
-```
+4. **Apri l'app nel browser**
+   Visita `http://localhost:4200` per vedere l'app in azione.
 
-## Running end-to-end tests
+## Licenza
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Questo progetto è sotto licenza MIT. Vedi il file LICENSE per i dettagli.
+Per le immagini ho utilizzato [Freepik](https://it.freepik.com/)

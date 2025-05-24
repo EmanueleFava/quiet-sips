@@ -1,0 +1,86 @@
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 100%;
+  max-width: 280px;
+  min-width: 260px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.card-container h5 {
+  margin-top: 0;
+  font-weight: 400;
+  transition: margin-top 0.3s ease, font-weight 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-container:hover .plot-overlay {
+  opacity: 1;
+}
+
+.card-container:hover > p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-container:hover h5 {
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.card-container:hover .plot-overlay p {
+  color: #fff;
+}
+
+.card-container img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-container p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card-container strong {
+  font-weight: 800;
+}
+
+.card-container .plot-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.card-container .plot-text {
+  color: #fff;
+  font-size: 14px;
+}

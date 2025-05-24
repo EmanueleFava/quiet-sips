@@ -1,0 +1,26 @@
+<div class="card-container" [routerLink]="['/dettails', book.id]">
+  <img [src]="book.imgUrl" alt="book-img" />
+  <p><strong>Titolo:</strong> {{ book.title }}</p>
+  <p><strong>Release:</strong> {{ book.releaseYear }}</p>
+  <p><strong>Rating:</strong> {{ book.averageRating }}</p>
+  <p><strong>Nome autore:</strong> {{ authorName }}</p>
+
+  <div class="plot-overlay">
+    <h5 class="plot-text">{{ book.title }}</h5>
+    <p class="plot-text">{{ book.plot }}</p>
+    <button
+      class="btn-add"
+      *ngIf="isLoggedIn && !hasBook"
+      (click)="onAddBookClick($event)"
+    >
+      add book
+    </button>
+    <button
+      class="btn-remove"
+      *ngIf="isLoggedIn && hasBook"
+      (click)="onRemoveBookClick($event)"
+    >
+      remove book
+    </button>
+  </div>
+</div>

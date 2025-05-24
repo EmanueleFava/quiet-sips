@@ -1,0 +1,20 @@
+.authors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 160px;
+  padding-left: 220px;
+  margin-top: -80px;
+}
+.authors-container > li {
+  list-style: none;
+  flex: 0 0 calc(33.333% - 13.33px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .authors-container {
+    margin-left: -30px;
+  }
+}

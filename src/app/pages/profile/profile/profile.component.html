@@ -1,0 +1,17 @@
+<app-avatar-profile [user]="userLogged" />
+
+<img
+  src="assets/quiet-reading4.png"
+  class="quiet-reader"
+  alt="quiet-sips-illustration"
+/>
+<h1 class="reviews-h1">Reviews</h1>
+<app-user-reviews [user]="userLogged" />
+
+<div class="container">
+  <img src="assets/queit-reading2.png" alt="quiet-sips-illustration" />
+</div>
+<div class="book-section">
+  <h1>My Books</h1>
+  <app-user-books [user]="userLogged" />
+</div>

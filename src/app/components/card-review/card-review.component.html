@@ -1,0 +1,11 @@
+<div class="card-review-container">
+  <div class="review-content">
+    <button (click)="onRemove()">❌</button>
+    <p class="review-description">"{{ review?.description }}"</p>
+    <div class="review-rating">★ {{ review?.rating }}/10</div>
+  </div>
+  <div class="user-info">
+    <img [src]="user?.imgUrl" alt="user-img" />
+    <p class="username">{{ user?.username }}</p>
+  </div>
+</div>

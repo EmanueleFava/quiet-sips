@@ -1,0 +1,10 @@
+<div class="dettails-container">
+  <div class="dettails">
+    <h1>{{ book?.title }}</h1>
+    <h2>{{ author?.name }}</h2>
+    <h3>Anno di uscita: {{ book?.releaseYear }}</h3>
+
+    <p>{{ book?.plot }}</p>
+  </div>
+  <div class="img-container"><img [src]="book?.imgUrl" alt="book-img" /></div>
+</div>

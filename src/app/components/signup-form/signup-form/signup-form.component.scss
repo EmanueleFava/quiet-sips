@@ -1,0 +1,98 @@
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin-top: -50px;
+}
+
+form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.errore {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #d68a64;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+// hover se non disabilitato
+button:hover:not(:disabled) {
+  background-color: #ce5c23;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+p.error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+p.success {
+  color: rgb(10, 227, 61);
+  margin-top: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<ng-container *ngIf="book; else errore">
+  <app-dettails-section [book]="book" [author]="author" />
+  <hr class="solid" />
+  <div class="author-img-container">
+    <img src="assets/author.png" alt="author-illustration" class="author-img" />
+  </div>
+  <app-author-dettails-section [author]="author" />
+
+  <h1 class="reviews-h1">Reviews</h1>
+  <app-review-textarea *ngIf="isLoggedIn" [bookId]="book.id" />
+  <app-reviews-list [hasFilter]="true" [bookId]="book.id" />
+
+  <div class="container">
+    <img src="assets/quiet-sips.png" alt="quiet-sips-illustration" />
+  </div>
+  <div class="book-section">
+    <h1>Books</h1>
+    <app-books-list [hasFilter]="true" [authorId]="authorId" />
+  </div>
+</ng-container>
+
+<ng-template #errore> errore </ng-template>
