@@ -1,6 +1,8 @@
 <div class="card-review-container">
   <div class="review-content">
-    <button (click)="onRemove()">❌</button>
+    <button *ngIf="review?.userId === userLogged?.id" (click)="onRemove()">
+      ❌
+    </button>
     <p class="review-description">"{{ review?.description }}"</p>
     <div class="review-rating">★ {{ review?.rating }}/10</div>
   </div>

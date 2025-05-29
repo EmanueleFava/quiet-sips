@@ -28,7 +28,6 @@ export class BookService {
           })
         );
       }),
-      // Flatten the nested Observable
       switchMap((booksWithReviews$) => booksWithReviews$)
     );
   }
@@ -39,7 +38,6 @@ export class BookService {
     }
     const sum = reviews.reduce((total, review) => total + review.rating, 0);
     const average = sum / reviews.length;
-    // Arrotonda a 1 decimale
     return Math.round(average * 10) / 10;
   }
 

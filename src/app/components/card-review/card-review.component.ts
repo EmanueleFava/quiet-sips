@@ -50,7 +50,7 @@ export class CardReviewComponent implements OnInit {
         .subscribe((data) => console.log(data));
       if (this.review?.id) {
         this.reviewService
-          .deleteReview(this.review?.id)
+          .deleteReview(this.review?.id, this.user?.id || '')
           .subscribe((data) => console.log(data));
       }
       localStorage.setItem('user', JSON.stringify(this.userLogged));
@@ -62,6 +62,8 @@ export class CardReviewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('we');
+    this.userLogged = this.auth.getUser();
+    console.log('user review id ', this.review?.userId);
+    console.log('userLogged id', this.userLogged?.id);
   }
 }

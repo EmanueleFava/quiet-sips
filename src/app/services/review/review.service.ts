@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable, Subject, tap } from 'rxjs';
+import { map, Observable, Subject, tap, switchMap } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { Review } from '../../models/Review';
 
@@ -49,9 +49,23 @@ export class ReviewService {
     return this.http.put<Review>(`${this.apiUrl}/${reviewId}`, review);
   }
 
-  deleteReview(reviewId: string): Observable<Review> {
-    return this.http
-      .delete<Review>(`${this.apiUrl}/${reviewId}`)
-      .pipe(tap(() => this.reviewRemovedSource.next()));
+  deleteReview(reviewId: string, userId: string): Observable<Review> {
+    return this.getReview(reviewId).pipe(
+      tap((review) => {
+        if (!review) {
+          throw new Error('Recensione non trovata');
+        }
+        if (review.userId !== userId) {
+          throw new Error(
+            'Non puoi cancellare una recensione che non ti appartiene'
+          );
+        }
+      }),
+      switchMap(() =>
+        this.http
+          .delete<Review>(`${this.apiUrl}/${reviewId}`)
+          .pipe(tap(() => this.reviewRemovedSource.next()))
+      )
+    );
   }
 }

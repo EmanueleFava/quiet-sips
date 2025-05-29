@@ -38,14 +38,23 @@ export class DettailsComponent implements OnInit {
       if (this.id) {
         console.log('id ricevuto:', this.id);
         this.bookService.getBook(this.id).subscribe((data) => {
-          this.book = data!;
-          console.log(this.book);
-          this.authorId = this.book.authorId || '';
-          console.log(this.authorId);
-          this.authorService.getAuthor(this.authorId).subscribe((data) => {
-            this.author = data!;
-            console.log(this.author);
-          });
+          if (data) {
+            this.book = data;
+            console.log(this.book);
+            this.authorId = this.book.authorId || '';
+            console.log(this.authorId);
+            this.authorService
+              .getAuthor(this.authorId)
+              .subscribe((authorData) => {
+                this.author = authorData!;
+                console.log(this.author);
+              });
+          } else {
+            this.book = null;
+            this.author = null;
+            this.authorId = '';
+            console.warn('Libro non trovato');
+          }
         });
       }
     });
